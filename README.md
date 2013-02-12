@@ -6,7 +6,7 @@ Installs and configures the IET iSCSI server providing a limited option subset (
 
 ## Usage
 
-Use ietd::default recipe to get an iSCSI server without any targets. These can be added to the `node[:ietd][:targets]` array like so:
+Use `recipe[ietd::default]` to get an iSCSI server without any targets configured. These can be added to the `node["ietd"]["targets"]` array like so:
 
 	"ietd": {
 		"targets": [
@@ -20,7 +20,7 @@ Use ietd::default recipe to get an iSCSI server without any targets. These can b
 		]
 	}
 
-All targets are publicly accessible by default, use `node[:ietd][:initiators_allow]` and `node[:ietd][:targets_allow]` that reflect the settings for *initiators.allow* and *targets.allow*. See default attributes file for more examples.
+All targets are publicly accessible by default, use `node["ietd"]["initiators_allow"]` and `node["ietd"]["targets_allow"]` arrays that reflect the settings for *initiators.allow* and *targets.allow*. See default attributes file for more examples.
 
 ## Requirements
 
