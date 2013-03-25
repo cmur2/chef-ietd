@@ -1,5 +1,7 @@
 # chef-ietd
 
+[![Build Status](https://travis-ci.org/cmur2/chef-ietd.png)](https://travis-ci.org/cmur2/chef-ietd)
+
 ## Description
 
 Installs and configures the IET iSCSI server providing a limited option subset (maybe easily extended) and currently **lacking** support for installing and configuring iSCSI initiator (client) software.
